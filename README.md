@@ -5,7 +5,7 @@ Scenarios for the brown bag session about secure node applications
 
 Snyk: [![Known Vulnerabilities](https://snyk.io/test/github/sdepold/node-security-brown-bag/badge.svg)](https://snyk.io/test/github/sdepold/node-security-brown-bag)
 
-NSP: ![Known Vulnerabilities](https://nodesecurity.io/orgs/barfooz/projects/df73b085-1256-4e50-90df-9358236622ee/badge)
+NSP: [![NSP Status](https://nodesecurity.io/orgs/barfooz/projects/df73b085-1256-4e50-90df-9358236622ee/badge)](https://nodesecurity.io/orgs/barfooz/projects/df73b085-1256-4e50-90df-9358236622ee)
 
 
 ## Setup

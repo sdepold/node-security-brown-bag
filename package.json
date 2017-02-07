@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "npm run test-nsp",
+    "test-nsp": "nsp check --output summary"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
@@ -17,6 +19,7 @@
     "serve-favicon": "~2.3.2"
   },
   "devDependencies": {
+    "nsp": "^2.6.2",
     "sequelize-cli": "^2.5.1"
   }
 }

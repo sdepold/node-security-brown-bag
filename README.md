@@ -3,7 +3,7 @@ Scenarios for the brown bag session about secure node applications
 
 ## Badges
 
-[![Known Vulnerabilities](https://snyk.io/test/github/sdepold/node-security-brown-bag/badge.svg)](https://snyk.io/test/github/sdepold/node-security-brown-bag)
+Snyk: [![Known Vulnerabilities](https://snyk.io/test/github/sdepold/node-security-brown-bag/badge.svg)](https://snyk.io/test/github/sdepold/node-security-brown-bag)
 
 
 ## Setup
@@ -57,7 +57,7 @@ nsp check --output summary
 ### Retire.JS
 
 Website: http://retirejs.github.io/retire.js/
-Description: Walks through all (!) the (!!) installed (!!!) dependencies and 
+Description: Walks through all the installed (!) dependencies and checks if they are vulnerable.
 
 ```
 npm install --save-dev retire

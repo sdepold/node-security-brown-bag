@@ -13,3 +13,13 @@ yarn add --dev sequelize-cli
 node_modules/.bin/sequelize init
 node_modules/.bin/sequelize model:create --name Task --attributes title:string
 ```
+
+## API
+
+```
+# Reading all tasks
+curl localhost:3000/tasks
+
+# Creating a task
+curl localhost:3000/tasks -d '{"title":"Some title"}'  -H 'content-type:application/json'
+```

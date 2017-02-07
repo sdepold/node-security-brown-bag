@@ -1,0 +1,19 @@
+{
+  "name": "node-security-brown-bag",
+  "version": "1.0.0",
+  "description": "Scenarios for the brown bag session about secure node applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdepold/node-security-brown-bag.git"
+  },
+  "author": "Sascha Depold <sascha@depold.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sdepold/node-security-brown-bag/issues"
+  },
+  "homepage": "https://github.com/sdepold/node-security-brown-bag#readme"
+}

@@ -17,14 +17,13 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "mysql": "^2.13.0",
-    "sequelize": "^3.23.6",
-    "serve-favicon": "~2.3.2",
-    "snyk": "^1.24.6"
+    "sequelize": "3.16",
+    "serve-favicon": "~2.3.2"
   },
   "devDependencies": {
     "nsp": "^2.6.2",
     "retire": "^1.2.11",
-    "sequelize-cli": "^2.5.1"
-  },
-  "snyk": true
+    "sequelize-cli": "^2.5.1",
+    "snyk": "^1.24.6"
+  }
 }

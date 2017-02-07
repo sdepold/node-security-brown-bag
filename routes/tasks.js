@@ -2,9 +2,10 @@ var express = require('express');
 var router = express.Router();
 var models = require('../models');
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
-  models.Task.findAll().then(function (tasks) {
+  // Please note that you should never do this ...
+  // Passing req.query to findAll allows the user to pass whatever argument they want ...
+  models.Task.findAll(req.query).then(function (tasks) {
     res.send({
       entries: tasks
     });

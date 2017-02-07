@@ -1,6 +1,11 @@
 {
   "development": {
-    "dialect": "sqlite",
-    "storage": "./database.sqlite"
+    "dialect": "mysql",
+    "password": null,
+    "username": "root",
+    "database": "nsbb",
+    "dialectOptions": {
+      "multipleStatements": true
+    }
   }
 }

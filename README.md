@@ -49,7 +49,15 @@ curl "http://localhost:3000/tasks" # Renders all available (aka no) tasks
 
 ### nsp
 
-website: https://nodesecurity.io/
+Website: https://nodesecurity.io/
+Description:
+- Uploads package.json / npm-shrinkwrap.json to NSP servers
+- Analysis happens remotely
+- Renders found vulnerabilities
+- Can be executed against a local copy of the vulnerability registry iif the app uses npm-shrinkwrap
+- Can integrate into Github and verify Pull-Requests
+- More extended plans contain weekly security reviews of pull requests as well as a pair attack session
+  against your application.
 
 ```
 npm install --save-dev nsp
@@ -59,7 +67,12 @@ nsp check --output summary
 ### Retire.JS
 
 Website: http://retirejs.github.io/retire.js/
-Description: Walks through all the installed (!) dependencies and checks if they are vulnerable.
+Description:
+- Free
+- Downloads list of known vulnerabilities to local machine
+- Walks through all the installed dependencies
+- Check dependencies against downloaded vulnerability list
+- Prints vulnerabilities
 
 ```
 npm install --save-dev retire
@@ -69,6 +82,13 @@ retire
 ### Snyk
 
 Website: https://snyk.io
+Description:
+- Downloads list of known vulnerabilities to local machine
+- Walks through all installed dependencies
+- Checks if dependencies are vulnerable based on the downloaded list (`snyk test`)
+- Allows interactive auto-healing via `snyk wizard`
+- Can patch vulnerabilities that are not fixed yet via `snyk protect`
+- Can notify you about new or properly fixed vulnerabilities via `snyk monitor`
 
 ```
 npm install -g snyk

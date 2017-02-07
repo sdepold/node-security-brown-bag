@@ -1,6 +1,11 @@
 # node-security-brown-bag
 Scenarios for the brown bag session about secure node applications
 
+## Badges
+
+[![Known Vulnerabilities](https://snyk.io/test/github/sdepold/node-security-brown-bag/badge.svg)](https://snyk.io/test/github/sdepold/node-security-brown-bag)
+
+
 ## Setup
 The following steps have been made to initialize the project:
 
@@ -40,6 +45,31 @@ curl "http://localhost:3000/tasks" # Renders all available (aka no) tasks
 
 ## Security checks
 
+### nsp
+
+website: https://nodesecurity.io/
+
+```
+npm install --save-dev nsp
+nsp check --output summary
 ```
 
+### Retire.JS
+
+Website: http://retirejs.github.io/retire.js/
+Description: Walks through all (!) the (!!) installed (!!!) dependencies and 
+
+```
+npm install --save-dev retire
+retire
+```
+
+### Snyk
+
+Website: https://snyk.io
+
+```
+npm install -g snyk
+snyk wizard
+snyk test
 ```

@@ -1,19 +1,22 @@
 {
   "name": "node-security-brown-bag",
-  "version": "1.0.0",
-  "description": "Scenarios for the brown bag session about secure node applications",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sdepold/node-security-brown-bag.git"
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "sequelize": "3.16",
+    "serve-favicon": "~2.3.2",
+    "sqlite3": "^3.1.8"
   },
-  "author": "Sascha Depold <sascha@depold.com>",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/sdepold/node-security-brown-bag/issues"
-  },
-  "homepage": "https://github.com/sdepold/node-security-brown-bag#readme"
+  "devDependencies": {
+    "sequelize-cli": "^2.5.1"
+  }
 }

@@ -31,7 +31,7 @@ curl "http://localhost:3000/tasks"
 curl "http://localhost:3000/tasks?limit=2"
 
 # Creating a task
-curl "http://localhost:3000/tasks" -d '{"title":"Some title"}'  -H 'content-type:application/json'
+curl "http://localhost:3000/tasks" -d '{"title":"some title"}'  -H 'content-type:application/json'
 ```
 
 ## Exploiting the app
@@ -43,6 +43,9 @@ curl "http://localhost:3000/tasks" # Renders all tasks
 curl "http://localhost:3000/tasks?limit=1" # Renders only a single task
 curl "http://localhost:3000/tasks?limit=1;DELETE%20FROM%20tasks" # Will delete the tasks due to vulnerability
 curl "http://localhost:3000/tasks" # Renders all available (aka no) tasks
+
+# ReDos attack
+curl "http://localhost:3000/tasks" -d '{"title":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}'  -H 'content-type:application/json'
 ```
 
 ## Security checks
@@ -97,7 +100,14 @@ snyk test
 ```
 
 ## Further resources
-- https://github.com/snyk/goof
+- Super vulnerable TODO app: https://github.com/snyk/goof
+- Greenkeeper Enterprise: https://github.com/greenkeeperio/greenkeeper/projects/3
+- Securing Your Node.js App: http://stackabuse.com/securing-your-node-js-app/
+- Tutorial about hacking an application: http://nodegoat.herokuapp.com/tutorial
+- Other, similar tools:
+    - https://www.sourceclear.com
+- ReDoS scanner: https://github.com/jagracey/RegEx-DoS
+- Explanation about ReDoS: https://en.wikipedia.org/wiki/ReDoS
 
 ## Presentation
 
@@ -110,3 +120,7 @@ snyk test
 - Create a fix via Snyk PR
 - Show and merge https://github.com/sdepold/node-security-brown-bag/pull/4
 - Run API requests again
+- Show ReDoS exploit
+- Run ReDoS test
+- Fix regular expression
+- Show Greenkeeper integration

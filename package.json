@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "npm run test-nsp && npm run snyk test",
+    "test": "npm run test-nsp && npm run snyk test && npm run test-retire && npm run test-redos",
     "test-nsp": "nsp check --output summary",
+    "test-redos": "find . -name '*.js' -not -path './node_modules/*' -exec redos {} \\;",
     "test-retire": "retire",
     "test-snyk": "snyk test"
   },

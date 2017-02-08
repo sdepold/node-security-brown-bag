@@ -15,9 +15,9 @@
     "debug": "~2.6.0",
     "express": "~4.14.1",
     "jade": "~1.11.0",
-    "morgan": "~1.7.0",
+    "morgan": "~1.8.0",
     "mysql": "^2.13.0",
-    "sequelize": "3.16",
+    "sequelize": "~3.30.2",
     "serve-favicon": "~2.3.2"
   },
   "devDependencies": {

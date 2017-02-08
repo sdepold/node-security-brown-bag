@@ -1,4 +1,6 @@
 # node-security-brown-bag
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/sdepold/node-security-brown-bag.svg)](https://greenkeeper.io/)
 Scenarios for the brown bag session about secure node applications
 
 ## Badges

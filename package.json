@@ -18,7 +18,8 @@
     "morgan": "~1.7.0",
     "mysql": "^2.13.0",
     "sequelize": "3.16",
-    "serve-favicon": "~2.3.2"
+    "serve-favicon": "~2.3.2",
+    "fury-adapter-swagger": "0.9.6"
   },
   "devDependencies": {
     "nsp": "^2.6.2",

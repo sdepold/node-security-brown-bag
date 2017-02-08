@@ -95,3 +95,18 @@ npm install -g snyk
 snyk wizard
 snyk test
 ```
+
+## Further resources
+- https://github.com/snyk/goof
+
+## Presentation
+
+- Explain application
+    - Show vulnerability in routes/tasks
+- Use and exploit the API endpoints
+- Run security checks
+- Show NSP, RetireJS, Snyk
+- Show https://github.com/sdepold/node-security-brown-bag/pull/3
+- Create a fix via Snyk PR
+- Show and merge https://github.com/sdepold/node-security-brown-bag/pull/4
+- Run API requests again

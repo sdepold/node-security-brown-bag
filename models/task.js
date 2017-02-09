@@ -1,6 +1,6 @@
 'use strict';
 
-const titleRegExp = /^(([a-z])+.)+[A-Z\s]([a-z])+$/;
+const titleRegExp = /^[a-zA-Z]+[a-zA-Z\s]+[a-zA-Z]$/;
 
 module.exports = function(sequelize, DataTypes) {
   var Task = sequelize.define('Task', {

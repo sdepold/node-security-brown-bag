@@ -8,7 +8,9 @@
     "test-nsp": "nsp check --output summary",
     "test-redos": "find . -name '*.js' -not -path './node_modules/*' -exec redos {} \\;",
     "test-retire": "retire",
-    "test-snyk": "snyk test"
+    "test-snyk": "snyk test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
@@ -18,13 +20,14 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "mysql": "^2.13.0",
-    "sequelize": "3.16",
-    "serve-favicon": "~2.3.2"
+    "sequelize": "3.23.6",
+    "serve-favicon": "~2.3.2",
+    "snyk": "^1.25.0"
   },
   "devDependencies": {
     "nsp": "^2.6.2",
     "retire": "^1.2.11",
-    "sequelize-cli": "^2.5.1",
-    "snyk": "^1.24.6"
-  }
+    "sequelize-cli": "^2.5.1"
+  },
+  "snyk": true
 }

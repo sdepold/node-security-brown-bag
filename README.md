@@ -53,6 +53,7 @@ curl "http://localhost:3000/tasks" -d '{"title":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 ### nsp
 
 Website: https://nodesecurity.io/
+
 Description:
 - Uploads package.json / npm-shrinkwrap.json to NSP servers
 - Analysis happens remotely
@@ -70,6 +71,7 @@ nsp check --output summary
 ### Retire.JS
 
 Website: http://retirejs.github.io/retire.js/
+
 Description:
 - Free
 - Downloads list of known vulnerabilities to local machine
@@ -85,6 +87,7 @@ retire
 ### Snyk
 
 Website: https://snyk.io
+
 Description:
 - Downloads list of known vulnerabilities to local machine
 - Walks through all installed dependencies
@@ -111,16 +114,20 @@ snyk test
 
 ## Presentation
 
-- Explain application
-    - Show vulnerability in routes/tasks
-- Use and exploit the API endpoints
-- Run security checks
-- Show NSP, RetireJS, Snyk
-- Show https://github.com/sdepold/node-security-brown-bag/pull/3
-- Create a fix via Snyk PR
-- Show and merge https://github.com/sdepold/node-security-brown-bag/pull/4
-- Run API requests again
-- Show ReDoS exploit
-- Run ReDoS test
-- Fix regular expression
-- Show Greenkeeper integration
+1. Use and explain application
+  1. Explain application
+  2. Use and exploit the API endpoints
+  3. Show vulnerability in `routes/tasks.js`
+2. Security checks
+  1. Run security checks
+  2. Show NSP, RetireJS, Snyk
+  3. Show https://github.com/sdepold/node-security-brown-bag/pull/3
+  4. Create a fix via Snyk PR
+  5. Show and merge https://github.com/sdepold/node-security-brown-bag/pull/4
+  6. Run API requests again
+3. ReDoS
+  1. Run ReDoS exploit
+  2. Show ReDoS vulnerability in `models/task.js`
+  3. Run ReDoS test
+  4. Fix regular expression
+4. Greenkeeper

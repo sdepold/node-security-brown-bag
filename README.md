@@ -129,5 +129,5 @@ snyk test
   1. Run ReDoS exploit
   2. Show ReDoS vulnerability in `models/task.js`
   3. Run ReDoS test
-  4. Fix regular expression
+  4. Fix regular expression (https://github.com/sdepold/node-security-brown-bag/pull/5)
 4. Greenkeeper

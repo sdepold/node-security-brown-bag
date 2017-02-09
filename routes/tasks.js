@@ -3,9 +3,9 @@ var router = express.Router();
 var models = require('../models');
 
 router.get('/', function(req, res, next) {
-  // Please note that you should never do this ...
-  // Passing req.query to findAll allows the user to pass whatever argument they want ...
-  models.Task.findAll(req.query).then(function (tasks) {
+  var limit = parseInt(req.query.limit, 10);
+
+  models.Task.findAll({ limit }).then(function (tasks) {
     res.send({
       entries: tasks
     });

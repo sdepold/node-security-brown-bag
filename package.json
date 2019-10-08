@@ -22,7 +22,7 @@
     "mysql": "^2.13.0",
     "sequelize": "3.23.6",
     "serve-favicon": "~2.3.2",
-    "snyk": "^1.25.0"
+    "snyk": "^1.232.0"
   },
   "devDependencies": {
     "nsp": "^2.6.2",
